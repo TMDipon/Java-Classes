@@ -15,8 +15,31 @@ public class Sample {
 
         //System.out.println(Student.getGrade(79));
 
-        //--------------loop section------------
+        //---------control statements----------
+        //switchCaseDemo(5);
 
+        //--------------loop section------------
+        //for loop
+        //forLoopDemo();
+
+        //while loop
+        //whileLoopDemo();
+
+    }
+
+    private static void whileLoopDemo() {
+        int start = 1;
+
+        while (start <= 20) {
+            if (start % 3 == 0) {
+                System.out.println(start + " is divisible by three");
+            }
+
+            start = start + 1;
+        }
+    }
+
+    private static void forLoopDemo() {
         //following loop prints the even numbers from 1 to 20
         for(int start = 1; start <= 20; start = start + 1) {
             if (!(start % 2 == 0)) {
@@ -43,5 +66,35 @@ public class Sample {
         }
 
         System.out.println("Came out from loop three");
+    }
+
+    private static void switchCaseDemo(int dayNumber) {
+
+        switch (dayNumber) {
+            case 1:
+                System.out.println("It is monday");
+                break;
+            case 2:
+                System.out.println("It is tuesday");
+                break;
+            case 3:
+                System.out.println("It is wednesday");
+                break;
+            case 4:
+                System.out.println("It is thursday");
+                break;
+            case 5:
+                System.out.println("It is friday");
+                break;
+            case 6:
+                System.out.println("It is saturday");
+                break;
+            case 7:
+                System.out.println("It is sunday");
+                break;
+            default:
+                System.out.println("Invalid day number");
+        }
+
     }
 }
